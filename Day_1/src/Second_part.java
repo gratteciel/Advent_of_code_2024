@@ -7,7 +7,7 @@ public class Second_part {
     public static void main(String[] args) {
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();
-        String filePath = "input.txt"; // Path to the file
+        String filePath = "Day_1/input.txt"; // Path to the file
         int sum = 0;
 
         try (Scanner scanner = new Scanner(new File(filePath))) {// read the file and fill lists
