@@ -13,7 +13,7 @@ public class First_part {
             int count = 0;
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                String[] words = line.split(" ");//every digits
+                String[] words = line.split(" ");// Every digits
                 //Store levels in an list
                 List<Integer> levels = new ArrayList<>();
 
@@ -36,10 +36,10 @@ public class First_part {
         for (int i = 0; i < levels.size()-1; i++) {
             int diff = levels.get(i+1) - levels.get(i);
             if (Math.abs(diff) > 3 || Math.abs(diff) < 1) {
-                return false; // Unsafe if difference is out of bounds
+                return false; // Unsafe if difference too high
             }
 
-            // Track ascending or descending nature
+            // Track if Descending or Ascending
             if (diff < 0) isAscending = false;
             if (diff > 0) isDescending = false;
         }
