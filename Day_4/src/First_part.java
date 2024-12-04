@@ -10,7 +10,7 @@ public class First_part {
     public static void main(String[] args) {
         String filePath = "Day_4/input.txt"; // Path to the file
         int sum = 0;
-        String searchedWord = "MAS";
+        String searchedWord = "XMAS";
 
 
         try (Scanner scanner = new Scanner(new File(filePath))) {
